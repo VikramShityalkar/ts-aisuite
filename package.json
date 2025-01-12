@@ -1,0 +1,38 @@
+{
+  "name": "ts-aisuite",
+  "version": "1.0.0",
+  "description": "Light weight suite to connect multiple LLM providers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix"
+  },
+  "keywords": [
+    "AI",
+    "Suite"
+  ],
+  "author": "Vikram Shityalkar",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@types/jest": "^29.5.14",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "prettier": "^3.4.2",
+    "ts-jest": "^29.2.5",
+    "typescript-eslint": "^8.17.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
+  }
+}
